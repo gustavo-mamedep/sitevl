@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Em manutenção • Sua Marca</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'maintenance/maintenance.css' %}">
+</head>
+<body>
+  <main class="page-wrapper">
+    <header class="page-header">
+      <img src="{% static 'maintenance/img/logo.png' %}" alt="Logo" class="logo">
+    </header>
+
+    <section class="content">
+      <h1>Em manutenção</h1>
+      <p>Estamos fazendo alguns ajustes para melhorar sua experiência. Voltamos em breve.</p>
+    </section>
+
+    <footer class="page-footer">
+      <div class="footer-inner">
+        <p><strong>Contatos</strong></p>
+        <p>WhatsApp: (34) 99955-4990 • (34) 99971-9209</p>
+        <p>E-mail: atendimento@vestelivre.com.br</p>
+        <p class="copy">© {{ now|date:"Y" }} Veste Livre. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
